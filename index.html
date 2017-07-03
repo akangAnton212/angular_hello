@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan Hello</title>
+	<style type="text/css">
+		.biru{
+			border:3px solid blue;
+			border-radius: 5px;
+			padding: 5px;
+		}
+ 
+		.hitam{
+			border:3px solid black;
+			border-radius: 5px;
+			padding: 5px;
+		}
+ 
+		div{
+			margin-top: 20px;
+		}
+	</style>
+	<script type="text/javascript" src="angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="">
+		<input type="text" ng-model="nama"/>
+		<br><br>
+		<input type="text" ng-model="warna"/>
+		<br>
+		<div>
+			<span class="{{warna}}"><b>{{"Hallo, nama saya " +nama}}</b></span>
+		</div>
+		
+	</div>
+
+</body>
+</html>
